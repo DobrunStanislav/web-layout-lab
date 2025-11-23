@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline-block верстка</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ib-container {
+            font-size: 0; /* Прибираємо відступи між блоками */
+        }
+        .ib-col {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 16px; /* Повертаємо шрифт тексту */
+        }
+        .w-20 { width: 20%; }
+        .w-60 { width: 60%; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Таблиця</a></li>
+                <li><a href="float.html">Float</a></li>
+                <li><a href="inline.html">Inline-block</a></li>
+                <li><a href="image.html">Малюнок</a></li>
+                <li><a href="form.html">Форма</a></li>
+            </ul>
+        </nav>
+        <h1>Варіант 03, 13 (Inline-block)</h1>
+    </header>
+
+    <div class="ib-container">
+        <div class="sidebar ib-col w-20">
+            <h2>Лівий</h2>
+        </div>
+        
+        <div class="main-content ib-col w-60">
+            <div class="inner-header"></div>
+            <div class="content-text">
+                <h3>Текст твору</h3>
+                <p>Тут розміщено текст за допомогою inline-block верстки.</p>
+            </div>
+            <div class="inner-footer"></div>
+        </div>
+        
+        <div class="sidebar ib-col w-20">
+            <h2>Правий</h2>
+        </div>
+    </div>
+
+    <footer>
+        <p>Футер (5)</p>
+    </footer>
+
+</body>
+</html>

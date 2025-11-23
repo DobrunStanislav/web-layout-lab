@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Float верстка</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            width: 100%;
+            overflow: hidden; /* Clearfix */
+        }
+        .float-left {
+            float: left;
+            width: 20%;
+        }
+        .float-center {
+            float: left;
+            width: 60%;
+        }
+        .float-right {
+            float: right; /* Можна також left, якщо сума 100% */
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Таблиця</a></li>
+                <li><a href="float.html">Float</a></li>
+                <li><a href="inline.html">Inline-block</a></li>
+                <li><a href="image.html">Малюнок</a></li>
+                <li><a href="form.html">Форма</a></li>
+            </ul>
+        </nav>
+        <h1>Варіант 03, 13 (Float)</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar float-left">
+            <h2>Лівий блок</h2>
+        </div>
+
+        <div class="main-content float-center">
+            <div class="inner-header"></div>
+            <div class="content-text">
+                <h3>Данте Аліг'єрі</h3>
+                <p>Текст з сайту ukrlib...</p>
+                <p>Розмітку плаваючими блоками виконано.</p>
+            </div>
+            <div class="inner-footer"></div>
+        </div>
+
+        <div class="sidebar float-right">
+            <h2>Правий блок</h2>
+        </div>
+    </div>
+
+    <footer style="clear: both;">
+        <p>Футер (5)</p>
+    </footer>
+
+</body>
+</html>
